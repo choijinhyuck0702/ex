@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Wide Web</title>
+    <link rel="stylesheet" href="./default.css">
+</head>
+<body>
+    <h1>WEB</h1>
+    <button>dark</button>
+    <ol>
+        <li><a href="./html2.html">HTML</a></li>
+        <li><a href="./css2.html">CSS</a></li>
+        <li><a href="./javascript2.html">JavaScript</a></li>
+    </ol>
+    <div>
+        <h2>HTML</h2>
+        <img width="640" height="359" src="./img-html.jpg" alt="HTML 이미지">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa qui voluptatem doloribus voluptas in dolor fugit voluptates, accusantium, debitis pariatur suscipit reiciendis reprehenderit perspiciatis odio voluptatum, voluptate cupiditate officia iure.
+            <br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A in, quod molestiae soluta quam quas rem dicta quibusdam reiciendis aperiam eveniet error aut reprehenderit? Ducimus numquam dignissimos officiis dolorum nisi.
+            <br><br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam eos laborum perferendis corrupti a sapiente nam, quisquam maxime eum minima minus magnam voluptatem! Tenetur distinctio laborum doloribus, repellat atque placeat.
+        </p>
+    </div>
+    <script>
+        $('button').click(function(){
+            $('body').css({'background-color':'black'});
+            $('h1').css({'border-bottom':'white'});//borderBottom
+            $('ol, h1, h2, p').css({'color':'white'});
+            $('a').css({'color':'lightblue'});
+        });
+    </script>
+</body>
+</html>
