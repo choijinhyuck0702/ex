@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            width:500px;
+            
+            white-space: nowrap; /* 줄바꿈 */
+            overflow: hidden;
+            text-overflow: ellipsis; /* 줄임표 */
+        }
+        #second-ptag{
+            letter-spacing: 10px;
+            word-spacing: 50px;
+        }
+        h1{
+            /* direction: rtl; */
+            text-align: left;
+            text-align: right;
+            text-align: center;
+            font-stretch: 10%; /* 적용안됨(장평) */
+        }
+        li:first-child{
+            text-indent: 100px;
+        }
+        li:nth-child(2){
+            text-indent: -50px;
+        }
+        li:nth-child(3){
+            font-size: 30px;
+            line-height: 1.0;
+        }
+        h2{
+            width:300px;
+            height:300px;
+            text-align: center;
+            background-color: #eee;
+            line-height: 300px;
+        }
+        
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad ut voluptates facere officiis? Quidem corrupti ratione et molestias. Velit, et consequuntur facere ea deserunt temporibus veniam rerum vitae incidunt molestiae.
+    </p>
+    <p id="second-ptag">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque atque adipisci cupiditate impedit nihil? Ipsum nulla quia voluptas praesentium molestias maxime ut, reprehenderit, officiis nostrum rerum temporibus a iure quod.
+    </p>
+    <h1>
+        大韓民國
+    </h1>
+    <ul>
+        <li>박스1</li>
+        <li>박스2</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor est molestiae non unde omnis. Magnam perspiciatis, quam illo qui nihil error quidem unde praesentium cupiditate dolor exercitationem veritatis doloremque consequuntur!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo repellendus inventore libero dolor sit, ut expedita amet consectetur, enim labore harum exercitationem repellat autem? Maiores obcaecati perspiciatis debitis rerum nemo!
+        </li>
+        <li>박스4</li>
+        <li>박스5</li>
+    </ul>
+    <h2>
+        대한민국
+    </h2>
+</body>
+</html>
