@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자6</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            font-size: 24px;
+            color: red;
+            margin:50px;
+        }
+        a:hover{
+            color:green;
+        }
+        div, section::before, section::after{
+            height:500px;
+            margin:50px;
+            font-size: 100px;
+            text-align: center;
+            line-height: 500px;
+        }
+        div:nth-child(1){
+            background-color: red;
+        }
+        div:nth-child(2){
+            background-color: green;
+        }
+        div:nth-child(3){
+            background-color: blue;
+        }
+        /* 타겟선택자 */
+        :target{
+            background-color: cyan;
+        }
+        /* 가상요소선택자 */
+        section::before{
+            content: '박스00';
+            display: block;
+            background-color:yellow;
+        }
+        section::after{
+            content:'box04';/* 무조건있어야함 */
+            display: block;
+            background-color:black;
+        }
+        p{
+            color:green;
+        }
+        p::first-letter{
+            font-size:200px;
+        }
+        p::first-line{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1>선택자6</h1>
+    <a href="#box01">box01</a>
+    <a href="#box02">box02</a>
+    <a href="#box03">box03</a>
+
+    <section>
+        <div id="box01">박스1</div>
+        <div id="box02">박스2</div>
+        <div id="box03">박스3</div>
+    </section>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem tempore in eum delectus dolor accusantium facere id. Veniam repudiandae atque maxime exercitationem modi, corporis repellat non quasi. Ullam, sequi adipisci?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident neque minus quaerat esse magnam amet, illum veniam expedita? Vel maxime explicabo a, dignissimos asperiores ex laborum facere porro? Voluptas, distinctio.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ullam debitis rem a voluptatibus vitae maiores consectetur aspernatur, est necessitatibus fugiat iste aperiam incidunt quasi, provident, cupiditate dignissimos illum beatae!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos possimus ratione repudiandae porro a distinctio vel repellat accusantium asperiores atque rerum nobis hic exercitationem quasi eos libero quisquam, dicta voluptate.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ducimus amet sit nostrum corrupti laboriosam maxime eum exercitationem dolorum laborum veniam, sint quisquam at architecto quasi quo unde veritatis ipsa!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et obcaecati doloremque illo quae perspiciatis non dolore eos ipsam commodi! Quidem minus explicabo ab perspiciatis fugiat nesciunt enim id, architecto ipsam.
+        Corrupti dolores tempora voluptatibus, molestias expedita similique recusandae modi, odio numquam animi quas asperiores mollitia aliquam explicabo dolor nesciunt, tempore saepe quibusdam hic illo quidem unde quam? Voluptatum, iusto laborum.
+        Excepturi, assumenda nesciunt ex tempora nam nemo nobis. Sint in dicta eum, laboriosam a nemo saepe cupiditate illum obcaecati beatae, harum porro rerum. Similique quidem aliquam expedita esse porro officia.
+        Obcaecati dicta nihil accusamus, eius ea perspiciatis ipsum, aperiam quisquam consectetur facere dignissimos veniam necessitatibus aspernatur doloremque voluptatibus possimus commodi? Odit voluptatibus beatae molestias repudiandae libero corrupti. Consequuntur, ipsum doloremque.
+        Nihil ad totam nobis cum asperiores, delectus dicta et perferendis? Autem neque nihil deserunt, ducimus fugit illo. Totam officia, eligendi dolore fuga consequatur deleniti. Quo facere dolorum rerum illum maxime.
+    </p>
+</body>
+</html>
