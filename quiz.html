@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding:0;
+            margin:0;
+        }
+        a{
+            text-decoration:none;
+            color:#000;
+        }
+        ul, ol, li{
+            list-style: none;
+        }
+        .wrap{
+            margin:0 auto;
+            width:1200px;
+        }
+        .wrap>*{
+            padding:20px;
+        }
+        .header{
+            background-color:#aaa;
+        }
+        .header h1{
+            text-align: center;
+        }
+        .aside{
+            float:left;
+            width:25%;
+            height:300px;
+            background-color: #bbb;
+            position:relative;
+        }
+        .aside nav li{
+            margin-bottom:20px;
+        }
+        .section{
+            float:right;
+            position:relative;
+            width:75%;
+            height:300px;
+            background-color:#ccc;
+        }
+        .aside::after{
+            content: '';
+            clear: both;
+            display: block;
+        }
+        .section::after{
+            content: '';
+            clear: both;
+            display: block;
+        }
+        .footer{
+            background:#aaa;
+            width:1200px;
+            height:80px;
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+    <section class="wrap">
+        <header class="header">
+            <h1>사이트제목</h1>
+        </header>
+        
+        <aside class="aside clearfix">
+            <nav>
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">지점찾기</a></li>
+                    <li><a href="#">제품소개</a></li>
+                    <li><a href="#">투자정보</a></li>
+                    <li><a href="#">게시판</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="section clearfix">
+            <h2>본문제목</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus perferendis voluptatibus mollitia facilis nisi alias, deleniti eligendi, sapiente laborum ipsam impedit vitae culpa optio dolor labore placeat excepturi consequuntur. Quisquam?
+                Nobis iusto harum cupiditate eius! Laboriosam nihil omnis animi cumque atque ut deleniti impedit expedita voluptas incidunt cupiditate eveniet hic ex ipsum, sint ab ea aperiam rerum eum est obcaecati.
+                Magnam nisi, architecto aliquam quas corporis quis, facere dicta maxime aut exercitationem repellendus expedita amet dolorum odio voluptatem tempore non! Temporibus reiciendis expedita molestias aut sint unde laborum, doloribus eum?
+                Sint rerum praesentium sunt natus laboriosam ad dolorem ducimus repudiandae. Necessitatibus consectetur officia in esse cum quod. Ut unde modi beatae iusto, minima ad ipsa distinctio voluptatem suscipit, iste pariatur.
+                Iste placeat esse corrupti. Nemo labore nostrum doloribus, sint ipsam accusamus obcaecati officiis deleniti, inventore dolores facilis nobis consequatur fugiat architecto aliquid repellat consequuntur placeat esse id similique mollitia itaque!
+            </p>
+        </section>
+        <footer class="footer">
+            <address class="address">주소</address>
+        </footer>
+    </section>
+</body>
+</html>
